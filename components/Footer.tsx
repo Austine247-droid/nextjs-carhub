@@ -2,6 +2,7 @@ import { images } from "@/constants/images";
 import Image from "next/image";
 import link from "next/image";
 import { footerLinks } from "@/constants";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -31,12 +32,13 @@ const Footer = () => {
               <h3 className="font-bold">{link.title}</h3>
               <ul className="flex flex-col gap-2">
                 {link.links.map((item) => (
-                  <li
+                  <Link
                     key={item.title}
+                    href={item.url}
                     className="text-gray-500 text-sm hover:text-black-100"
                   >
-                    <a href={item.url}>{item.title}</a>
-                  </li>
+                    {item.title}
+                  </Link>
                 ))}
               </ul>
             </div>
