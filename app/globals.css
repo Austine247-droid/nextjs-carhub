@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 /* START: General styles */
@@ -33,17 +33,17 @@
 }
 
 .custom-btn {
-  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+  @apply flex justify-center items-center outline-none;
 }
 /* END: General styles */
 
 /* START: Hero styles */
 .hero {
-  @apply flex flex-col gap-[10px] relative z-0 max-w-[1440px] mx-auto xl:flex-row;
+  @apply flex flex-col gap-[10px] relative z-0 max-w-[1440px] mx-auto;
 }
 
 .hero__title {
-  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+  @apply 2xl:text-[60px] sm:text-[45px] text-[30px] font-bold;
 }
 
 .hero__subtitle {
@@ -55,7 +55,7 @@
 }
 
 .hero__image {
-  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
+  @apply xl:w-full w-[90%] xl:h-full h-[590px];
 }
 
 .hero__image-overlay {
@@ -88,7 +88,7 @@
 
 /* START: Car Card styles */
 .car-card {
-  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl;
+  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md cursor-pointer rounded-3xl;
 }
 
 .car-card__content {
@@ -182,13 +182,13 @@
 }
 
 .footer__copyrights-link {
-  @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
+  @apply flex-1 flex sm:justify-end justify-start max-sm:mt-4 gap-10;
 }
 /* END: Footer styles */
 
 /* START: searchbar styles */
 .searchbar {
-  @apply flex items-center justify-start max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl;
+  @apply flex items-center justify-start max-sm:flex-col w-full relative max-sm:gap-4;
 }
 
 .searchbar__item {

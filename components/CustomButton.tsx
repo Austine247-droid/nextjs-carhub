@@ -2,8 +2,10 @@
 
 import { CustomButtonProps } from "@/types";
 import Image from "next/image";
+import { Children } from "react";
 
 const CustomButton = ({
+  // children,
   title,
   containerStyles,
   handleClick,
